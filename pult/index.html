@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<title>CRYPTUS · пульт проекта</title>
+<style>
+:root{--bg:#0b0b10;--card:#15151d;--line:#262633;--txt:#ececf1;--mut:#9a9ab0;--vio:#9b82ff;--ok:#35d07f;--warn:#f5b84a;--bad:#ff5a5a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.5 -apple-system,"SF Pro Text",Inter,system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:30px;line-height:1.15;margin:0 0 6px;letter-spacing:-.02em}h1 b{color:var(--vio)}
+.sub{color:var(--mut);margin:0 0 22px}
+h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--vio);margin:34px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--txt);text-decoration:none}
+a.card:hover{border-color:var(--vio)}
+.card .t{font-weight:650;margin-bottom:3px}.card .d{color:var(--mut);font-size:14px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px}
+.row{display:flex;gap:10px;margin:7px 0}.ic{flex:0 0 22px}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.road{border-left:2px solid var(--line);margin-left:8px;padding-left:16px}
+.step{position:relative;margin:0 0 14px}.step:before{content:"";position:absolute;left:-23px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--line)}
+.step.done:before{background:var(--ok)}.step.now:before{background:var(--vio);box-shadow:0 0 0 4px rgba(155,130,255,.25)}.step.wait:before{background:var(--warn)}
+.step b{display:block}.step span{color:var(--mut);font-size:14px}
+img{width:100%;border-radius:12px;border:1px solid var(--line);display:block;margin:8px 0}
+.you{background:linear-gradient(135deg,#1d1730,#15151d);border-color:#3a2f66}
+ol{margin:6px 0 0 18px;padding:0}li{margin:6px 0}
+.small{font-size:13px;color:var(--mut)}
+</style></head><body><div class="wrap">
+
+<h1>CRYPTUS · <b>пульт проекта</b></h1>
+<p class="sub">Всё в одном месте: что сделано, что не получилось, что дальше и где смотреть. Обновлено 17.11.2026.</p>
+
+<h2>Два продукта</h2>
+<div class="grid">
+ <div class="box"><b>🤖 Бот-редактор</b> <span class="ok">· работает, пилот у Андрея</span><br><span class="small">@design_brat_bot → /start → «🖋 Редактор». Радар → глубокий ресёрч → пост → картинка.</span></div>
+ <div class="box"><b>🗂 Сайт «Редакция CRYPTUS»</b> <span class="warn">· строится, пока без живой ссылки</span><br><span class="small">Контент-план, реклама, учёт обязательств. Живая ссылка появится после базы Supabase (за тобой).</span></div>
+</div>
+
+<h2>Где смотреть</h2>
+<div class="grid">
+ <a class="card" href="../map/"><div class="t">🧭 Воронка бота — схема от точки до точки</div><div class="d">Каждый шаг: экран, что нажимаешь, что делает бот внутри</div></a>
+ <a class="card" href="../redakcia-w1/"><div class="t">📅 Контент-план — первая волна сайта</div><div class="d">Неделя, месяц, канбан, рекламные слоты партнёров (скрины)</div></a>
+ <a class="card" href="../redakcia/"><div class="t">🖥 Образец сайта — 3 экрана</div><div class="d">Контент-план, пост, живой ресёрч — кликабельно</div></a>
+ <a class="card" href="../styles/"><div class="t">🎨 Стили картинок — финальное меню</div><div class="d">Твои отметки учтены: убраны «3D-предмет» и «Цифра недели»</div></a>
+ <a class="card" href="../fix-1116/"><div class="t">🛠 Картинки Андрея: было → стало</div><div class="d">Что сломалось и как починили</div></a>
+ <a class="card" href="../sources/"><div class="t">📡 Карта источников</div><div class="d">123 голоса в X, 38 YouTube, Reddit, белый/чёрный список СМИ</div></a>
+ <a class="card" href="../motion/"><div class="t">🎞 Оживление картинок</div><div class="d">Ролики кодом (работает) и честно про Veo (не работает)</div></a>
+ <a class="card" href="../v4/"><div class="t">🖼 Эталоны «как было — как будет»</div><div class="d">Гэвин Вуд, Метеора, Polkadot и разбор, как их делали</div></a>
+</div>
+
+<h2>Контент-план — так он выглядит</h2>
+<img src="plan.jpg" alt="Контент-план: неделя с рекламными слотами">
+<p class="small">Это первая волна сайта на тестовых данных: CoinW, Цифра, Konnex, Bullshot, ZOT в календаре; без пометки «Реклама»/erid слот не встаёт в «Готов». Живым и с сохранением станет после базы.</p>
+
+<h2>Что сделано круто</h2>
+<div class="box">
+ <div class="row"><span class="ic ok">✅</span><span><b>Тексты и ресёрч.</b> Всегда глубокий ресёрч (Gemini + Perplexity + Claude + X + YouTube), досье одной статьёй со ссылками, 5 форматов, 7 голосов канала, пост одним сообщением в нашей вёрстке.</span></div>
+ <div class="row"><span class="ic ok">✅</span><span><b>Безопасность.</b> Два аудита (в т.ч. на самой сильной модели): утечка ключей, лишний доступ Андрея, подделка «бесплатно», лимиты — закрыто и перепроверено.</span></div>
+ <div class="row"><span class="ic ok">✅</span><span><b>Надёжность.</b> Сторож раз в час, обновления без потери заданий, одно окно браузера, ночная уборка в Google Диск.</span></div>
+ <div class="row"><span class="ic ok">✅</span><span><b>Стили.</b> 6 стилей + 5 карточных серий + 8 дополнительных, выбор картинкой «1…N» прямо в боте.</span></div>
+</div>
+
+<h2>Что не круто — честно</h2>
+<div class="box">
+ <div class="row"><span class="ic bad">❌</span><span><b>Картинки в пилоте вышли слабыми.</b> Бот рисовал с одного раза, на запасной модели, текст ломался. Процесс переделан (ТЗ по эталонам, 3 варианта, критик, проверка букв) — но <b>текст на картинках всё ещё слабый</b>: «призрак», тонущие цифры, простой шрифт. Чиним сейчас.</span></div>
+ <div class="row"><span class="ic bad">❌</span><span><b>Андрей остался без картинки к посту.</b> Бот принимал «сделай картинку» за новую тему — исправлено.</span></div>
+ <div class="row"><span class="ic warn">⚠️</span><span><b>Квота Gemini кончается к вечеру</b> → бот уходит на слабую модель. Нужно твоё решение (ниже).</span></div>
+ <div class="row"><span class="ic warn">⚠️</span><span><b>Veo-видео не работает</b> (3 попытки — 0 роликов). Оживляем кодом.</span></div>
+ <div class="row"><span class="ic warn">⚠️</span><span><b>Сайт без живой ссылки</b> и <b>ссылки были разбросаны</b> — этот пульт и есть исправление.</span></div>
+</div>
+
+<h2>Роадмап</h2>
+<div class="box"><b>🤖 Бот</b>
+<div class="road" style="margin-top:10px">
+ <div class="step done"><b>Запуск и пилот</b><span>Радар, ресёрч, посты, картинки, безопасность — работает у Андрея</span></div>
+ <div class="step now"><b>Текст на картинках — типографика CRYPTUS</b><span>Сильные шрифты, текст всегда целиком, табло-шрифт на табло. Сейчас</span></div>
+ <div class="step now"><b>Карточки в боте — 5 серий</b><span>Шаблоны серий по 6 карточек. Следом</span></div>
+ <div class="step wait"><b>Запасная модель картинок</b><span>Ждёт твоего решения</span></div>
+ <div class="step"><b>Качество поиска X/Reddit/YouTube</b><span>После пополнения xAI</span></div>
+ <div class="step"><b>Видео-рилсы с голосом</b><span>Позже</span></div>
+</div></div>
+<div class="box"><b>🗂 Сайт «Редакция»</b>
+<div class="road" style="margin-top:10px">
+ <div class="step done"><b>Спека, путь страниц, образец 3 экранов</b><span>Готово</span></div>
+ <div class="step done"><b>Фаза 1, волна 1: контент-план и реклама</b><span>Готово на тестовых данных</span></div>
+ <div class="step wait"><b>Живая ссылка со входом</b><span>Ждёт базу Supabase (за тобой)</span></div>
+ <div class="step now"><b>Фаза 2: «Исполнение обязательств»</b><span>Образец 4 экранов рисуется → твоё «да» → стройка</span></div>
+ <div class="step"><b>Фаза 3–4: ресёрч, пост и картинки на сайте</b><span>После</span></div>
+</div></div>
+
+<h2>Что нужно от тебя</h2>
+<div class="box you">
+<ol>
+ <li><b>Supabase</b> — supabase.com → Organizations: сколько активных бесплатных проектов. Без этого сайт не станет живой ссылкой.</li>
+ <li><b>Запасная модель картинок</b> — когда кончается квота Gemini: Nano Banana Pro в Higgsfield (2 кредита за кадр, потолок 30 в день) — рекомендую; или только бесплатный Seedream.</li>
+ <li><b>Perplexity Pro</b> — войти в основном Chrome на мини.</li>
+ <li><b>xAI</b> — пополнить, чтобы вернулся поиск по X.</li>
+ <li><b>3 черновые картинки 16.11</b> в открытом хранилище — удалить (рекомендую) или оставить.</li>
+</ol>
+</div>
+<p class="small">Страница закрыта от поисковиков. Цены договоров и секреты сюда не попадают.</p>
+</div></body></html>
