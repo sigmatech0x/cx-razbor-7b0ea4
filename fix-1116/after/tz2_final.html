@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Head;src:url('file:///Users/leo/brain/assistant-bot/assets/fonts/OswaldBold.ttf')}
+@font-face{font-family:Plate;src:url('file:///Users/leo/brain/assistant-bot/assets/fonts/GolosBold.ttf')}
+@font-face{font-family:Mono;src:url('file:///Users/leo/Library/Fonts/JetBrainsMonoNLNerdFont-Medium.ttf')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1600px;height:900px;overflow:hidden;background:#000}
+.bg,.hero{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bg{z-index:1} .hero{z-index:4} .smk{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3;pointer-events:none}
+.head{position:absolute;z-index:2;left:6.0%;top:12.0%;width:88.0%;height:50.0%;
+  transform:scaleY(1);transform-origin:top center;
+  display:flex;flex-direction:column;justify-content:center;text-align:center;
+  font-family:Head;text-transform:uppercase;color:#eef0f2;line-height:.9;letter-spacing:-.01em}
+.ln{white-space:nowrap;text-shadow:0 7.5px 50.0px rgba(0,0,0,.35)}
+.ln.hot{color:#E0201B}
+.plate{position:absolute;z-index:4;left:35.0px;bottom:72.5px;max-width:62%;
+  background:rgba(8,9,11,.82);border-left:7.5px solid #E0201B;padding:20.0px 27.5px;
+  font-family:Plate;font-size:37.5px;line-height:1.22;color:#f3f4f6}
+.plate b{color:#E0201B}
+.tag,.src,.interp,.logo{position:absolute;z-index:5;font-family:Mono;color:rgba(255,255,255,.72);letter-spacing:.08em}
+.tag{left:35.0px;top:32.5px;font-size:23.75px;text-transform:uppercase}
+.tag i{display:inline-block;width:15.0px;height:15.0px;border-radius:50%;background:#E0201B;margin-right:15.0px;vertical-align:middle}
+.logo{right:35.0px;top:32.5px;font-size:21.25px;letter-spacing:.42em}
+.src{left:35.0px;bottom:22.5px;font-size:16.25px;color:rgba(255,255,255,.5);text-transform:uppercase}
+.interp{right:35.0px;bottom:22.5px;font-size:16.25px;color:rgba(255,255,255,.5)}
+
+.head{-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 52%,rgba(0,0,0,.35) 62%,rgba(0,0,0,.12) 100%);mask-image:linear-gradient(180deg,#000 0%,#000 52%,rgba(0,0,0,.35) 62%,rgba(0,0,0,.12) 100%)}
+.ln{text-shadow:none}
+
+</style></head><body>
+<img class="bg" src="file:///Users/leo/brain/cryptus-editor-bot/visual/incident-1116/after/tz2_best.jpg">
+<div class="head" id="head"><div class="ln">$61 950</div></div>
+
+<script>
+// подгоняем кегль: самая длинная строка = ширина бокса, все строки влезают по высоте
+document.fonts.ready.then(()=>{
+  const box=document.getElementById('head'); const W=box.clientWidth, H=box.clientHeight;
+  let lo=10, hi=900;
+  for(let k=0;k<30;k++){ const m=(lo+hi)/2; box.style.fontSize=m+'px';
+    const fit=[...box.children].every(c=>c.scrollWidth<=W) && box.scrollHeight<=H; if(fit) lo=m; else hi=m; }
+  box.style.fontSize=lo+'px';
+  const hm=document.getElementById('hm'), bx=document.getElementById('box');
+  if(!hm||!bx){document.body.dataset.ready='1';return;}
+  const go=()=>{ // рамка слежения по маске героя (кадр растянут как object-fit:cover)
+    const W2=1600,H2=900,iw=hm.naturalWidth,ih=hm.naturalHeight,k=Math.max(W2/iw,H2/ih),ox=(W2-iw*k)/2,oy=(H2-ih*k)/2;
+    const c=document.createElement('canvas');c.width=iw;c.height=ih;const g=c.getContext('2d');g.drawImage(hm,0,0);
+    const d=g.getImageData(0,0,iw,ih).data;let x0=iw,y0=ih,x1=0,y1=0;
+    for(let y=0;y<ih;y+=2)for(let x=0;x<iw;x+=2){if(d[(y*iw+x)*4+3]>60){if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y;}}
+    if(x1>x0){const p=0.03*W2;let L=ox+x0*k-p,T=oy+y0*k-p,R=ox+x1*k+p,B=oy+y1*k+p;
+      L=Math.max(L,20);T=Math.max(T,60);R=Math.min(R,W2-20);B=Math.min(B,H2-40);
+      Object.assign(bx.style,{display:'block',left:L+'px',top:T+'px',width:(R-L)+'px',height:(B-T)+'px'});}
+    document.body.dataset.ready='1';};
+  hm.complete?go():hm.onload=go;
+});
+</script></body></html>

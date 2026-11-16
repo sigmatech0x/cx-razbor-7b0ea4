@@ -1,0 +1,241 @@
+{
+ "mood": "neg",
+ "items": [
+  {
+   "id": "tz1",
+   "style": "3D-предмет перед гигантом — в палитре CRYPTUS",
+   "headline": "5 ГИРЬ",
+   "candidates": [
+    "tz1_c1.jpg",
+    "tz1_c2.jpg",
+    "tz1_c3.jpg"
+   ],
+   "best": "tz1_c1.jpg",
+   "critic": {
+    "best": 0,
+    "scores": [
+     {
+      "idx": 0,
+      "depth": 8,
+      "anomalies": 8,
+      "junk_text": 10,
+      "tz": 8,
+      "space": 9,
+      "total": 8,
+      "note": "Ровно пять гирь на цепях, все висят и тянут монету вниз — идея читается сразу. Палитра чёрный/красный/фиолетовый совпадает с эталоном, есть передний план с цепью в расфокусе. Сверху много чистого чёрного места под «5 ГИРЬ». Минус: монета не очень крупная, металл чуть плоский по сравнению с эталоном."
+     },
+     {
+      "idx": 1,
+      "depth": 8,
+      "anomalies": 7,
+      "junk_text": 10,
+      "tz": 6,
+      "space": 8,
+      "total": 6,
+      "note": "Красивый свет и объём, но гири стоят на полу, а цепи провисли. Ничто не тянет монету вниз: она будто стоит на ножках, и смысл «тянут вниз» пропадает. Гири разного размера, центральная — шар без ручки-гири. Зона сверху чистая."
+     },
+     {
+      "idx": 2,
+      "depth": 8,
+      "anomalies": 3,
+      "junk_text": 10,
+      "tz": 4,
+      "space": 8,
+      "total": 4,
+      "note": "Гирь шесть, а не пять: справа от центра две цепи переплетены и задвоены, гиря лишняя. Ломает и счёт «5 ГИРЬ», и физику подвеса. Свет и неоновый ободок сильные, верх чистый, но это брак."
+     }
+    ],
+    "reject": [
+     2
+    ],
+    "notes_for_retry": "",
+    "files": [
+     "incident-1116/after/tz1_c1.jpg",
+     "incident-1116/after/tz1_c2.jpg",
+     "incident-1116/after/tz1_c3.jpg"
+    ]
+   },
+   "retried": false,
+   "gen_log": [
+    {
+     "file": "tz1_c1.jpg",
+     "status": "done",
+     "engine": "gemini",
+     "s": 97,
+     "err": null
+    },
+    {
+     "file": "tz1_c2.jpg",
+     "status": "done",
+     "engine": "gemini",
+     "s": 90,
+     "err": null
+    },
+    {
+     "file": "tz1_c3.jpg",
+     "status": "done",
+     "engine": "gemini",
+     "s": 98,
+     "err": null
+    }
+   ],
+   "minutes": 6.8
+  },
+  {
+   "id": "tz2",
+   "style": "Вода затапливает цифру",
+   "headline": "$61 950",
+   "candidates": [
+    "tz2_c1.jpg",
+    "tz2_c2.jpg",
+    "tz2_c3.jpg"
+   ],
+   "best": "tz2_c3.jpg",
+   "critic": {
+    "best": 2,
+    "scores": [
+     {
+      "idx": 0,
+      "depth": 7,
+      "anomalies": 7,
+      "junk_text": 7,
+      "tz": 6,
+      "space": 7,
+      "total": 6,
+      "note": "Good split-level shot with two red monitors sinking. But the room barely reads as flooded: the waterline sits like the glass of a tank in front of the desks. The monitors in the hall are dark, so nothing glows. The papers carry pseudo-text, and the front sheet is blurred and covers a big part of the frame. Dark ceiling at the top gives room for the headline."
+     },
+     {
+      "idx": 1,
+      "depth": 7,
+      "anomalies": 5,
+      "junk_text": 7,
+      "tz": 5,
+      "space": 8,
+      "total": 5,
+      "note": "Wide dark top with a clean zone for '$61 950'. Flaws: the room floor behind is dry carpet, so the water only exists in the foreground like an aquarium. The keyboard merges with the red monitor, and a monitor sticks out of the water like a fin. The hall monitors don't glow, so the idea reads weakly."
+     },
+     {
+      "idx": 2,
+      "depth": 8,
+      "anomalies": 7,
+      "junk_text": 8,
+      "tz": 7,
+      "space": 7,
+      "total": 7,
+      "note": "Best fit for the brief. The water surface runs deep into the hall with reflections, the monitors on the desks glow (blurry, no readable text), and the red monitor in the centre is sinking. Clear hero and solid depth. Minor issues: the pseudo-text on the papers, a large blurred sheet on the left, and cables that look like seaweed. The top of the frame is fairly clean for the headline."
+     }
+    ],
+    "reject": [],
+    "notes_for_retry": "Make the whole trading floor visibly flooded waist-high with water continuing to the back wall, and have many monitors glowing (red/green charts, no readable text) as they sink below the surface. Remove floating papers with text and keep the top third as dark empty ceiling for the headline.",
+    "files": [
+     "incident-1116/after/tz2_c1.jpg",
+     "incident-1116/after/tz2_c2.jpg",
+     "incident-1116/after/tz2_c3.jpg"
+    ]
+   },
+   "retried": false,
+   "gen_log": [
+    {
+     "file": "tz2_c1.jpg",
+     "status": "done",
+     "engine": "gemini",
+     "s": 73,
+     "err": null
+    },
+    {
+     "file": "tz2_c2.jpg",
+     "status": "done",
+     "engine": "gemini",
+     "s": 130,
+     "err": null
+    },
+    {
+     "file": "tz2_c3.jpg",
+     "status": "done",
+     "engine": "gemini",
+     "s": 81,
+     "err": null
+    }
+   ],
+   "minutes": 7.5
+  },
+  {
+   "id": "tz3",
+   "style": "Текст в сцене (табло вылетов)",
+   "headline": "9 ДЕКАБРЯ",
+   "candidates": [
+    "tz3_c1.jpg",
+    "tz3_c2.jpg",
+    "tz3_c3.jpg"
+   ],
+   "best": "tz3_c3.jpg",
+   "critic": {
+    "best": 2,
+    "scores": [
+     {
+      "idx": 0,
+      "depth": 7,
+      "anomalies": 8,
+      "junk_text": 7,
+      "tz": 7,
+      "space": 6,
+      "total": 7,
+      "note": "Solid board, but the heroes are mid-size and the steel ceiling truss clutters the frame. The Fed line says BOARDING, not landing. A small WIFI sign on the right is extra text. The man's head covers the last line of the board."
+     },
+     {
+      "idx": 1,
+      "depth": 7,
+      "anomalies": 9,
+      "junk_text": 9,
+      "tz": 7,
+      "space": 6,
+      "total": 7,
+      "note": "The cleanest frame: symmetric, cinematic red backlight, no junk text. The heroes are small and seen from behind, so it has less drama than the reference. The Fed line still says BOARDING instead of landing."
+     },
+     {
+      "idx": 2,
+      "depth": 9,
+      "anomalies": 8,
+      "junk_text": 8,
+      "tz": 8,
+      "space": 5,
+      "total": 8,
+      "note": "Closest to the reference: large foreground heroes with blur, a real sense of depth, and the DELAYED glow is a strong accent. The board rows are slightly uneven (the gap in LONGS, the ragged left edge), and the man's head cuts off the B in BTC PUT. Little free space."
+     }
+    ],
+    "reject": [],
+    "notes_for_retry": "Make the Fed row read 'FED RATE — LANDING' and drop the extra DXY/BTC PUT rows so the board shows exactly the four weights. Keep large foreground silhouettes with shallow depth of field, as in idx 2.",
+    "files": [
+     "incident-1116/after/tz3_c1.jpg",
+     "incident-1116/after/tz3_c2.jpg",
+     "incident-1116/after/tz3_c3.jpg"
+    ]
+   },
+   "retried": false,
+   "gen_log": [
+    {
+     "file": "tz3_c1.jpg",
+     "status": "done",
+     "engine": "gemini",
+     "s": 81,
+     "err": null
+    },
+    {
+     "file": "tz3_c2.jpg",
+     "status": "done",
+     "engine": "gemini",
+     "s": 81,
+     "err": null
+    },
+    {
+     "file": "tz3_c3.jpg",
+     "status": "done",
+     "engine": "Seedream 5 Lite",
+     "s": 458,
+     "err": null
+    }
+   ],
+   "minutes": 19.2
+  }
+ ]
+}

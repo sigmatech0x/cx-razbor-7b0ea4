@@ -1,0 +1,1 @@
+{"rebuilt": "overlay/giant", "first": {"ok": false, "letters": 6, "worst_cover": 0.402, "ocr": "5 ГИДЬ", "ocr_ok": false, "why": "буква закрыта на 40%; OCR прочитал «5 ГИДЬ» вместо «5 ГИРЬ»", "mode": "behind"}, "ok": true, "letters": 6, "worst_cover": 0.0, "ocr": "5 ГИРЬ", "ocr_ok": true, "why": ""}

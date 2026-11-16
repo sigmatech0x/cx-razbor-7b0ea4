@@ -1,0 +1,193 @@
+{
+ "mood": "neg",
+ "mood_name": "Негатив / угроза",
+ "palette": {
+  "фон": "#050505",
+  "основной": "#F0EEE9",
+  "акцент": "#E0201B",
+  "свечение": "#E0201B"
+ },
+ "items": [
+  {
+   "id": "tz1",
+   "style_id": "ours_meteora",
+   "style": "3D-предмет перед гигантом — в палитре CRYPTUS",
+   "group": "Наши форматы",
+   "idea": "Биткоин-монета висит на пяти чугунных гирях на цепях: её тянет вниз не один продавец, а пять грузов сразу",
+   "why": "Заголовок поста — «Пять гирь на шее биткоина». Монета под пятью грузами показывает главный тезис: «один продавец так не роняет», цену тянут сразу пять сил. Это вердикт про актив, то есть ours_meteora с предметом-символом",
+   "headline": "5 ГИРЬ",
+   "hero": "глянцевая чёрная монета биткоина, к которой снизу на цепях подвешены пять чугунных гирь",
+   "zone": "top",
+   "format": "16:9",
+   "prompt": "A single thick coin with an embossed bitcoin B symbol, made of glossy black glass and dark brushed metal, hanging slightly tilted in the lower-middle of the frame, pulled downward by five short heavy steel chains attached to its bottom edge; each chain ends in a matte black cast-iron kettlebell of different size, the kettlebells hang at uneven heights just above a reflective black floor, the chains taut under the weight. Material and lighting: thin neon red #E0201B edge glow along the rim of the coin and the handles of the kettlebells, subtle violet #9B82FF reflections on the glass surface, a hard cold top-down key light from the upper left, a soft red rim light from behind separating the object from the background, crisp specular highlights, visible cast-iron texture and tiny scratches on the metal. Depth: a blurred dark chain link out of focus in the near foreground at the lower left corner, the coin and weights tack-sharp in the middle, a soft red floor glow fading into pure black behind. Shot with an 85mm lens at eye level, slightly low angle so the weights feel heavy. Mood: tense, heavy, gravitational, dark palette of black, deep red and a touch of violet. The upper 40% of the frame is clean pure flat black, Hyper-realistic premium 3D product render, 16:9 widescreen landscape. no logos, no watermark. Palette: background #050505, main #F0EEE9, accent #E0201B, glow #E0201B; intense red glow from below, deep shadows, ominous. No text, no letters, no numbers, no logos, no watermark.",
+   "compose": {
+    "mode": "behind",
+    "look": "giant",
+    "box": [
+     0.04,
+     0.05,
+     0.92,
+     0.27
+    ],
+    "tint": "mood.glow"
+   },
+   "text": {
+    "by": "code",
+    "kind": "giant",
+    "how": "Гигант с градиентом за предметом (конвейер Метеоры); предмет отдельно с кантом; проверка читаемости, иначе спереди.",
+    "compose": {
+     "mode": "behind",
+     "look": "giant",
+     "box": [
+      0.04,
+      0.05,
+      0.92,
+      0.27
+     ],
+     "tint": "mood.glow",
+     "requires": [
+      "hero",
+      "zone"
+     ]
+    }
+   },
+   "models": [
+    "nano_banana_pro_gemini",
+    "seedream_5_lite_4k",
+    "nano_banana_gemini"
+   ],
+   "examples": [
+    {
+     "label": "3D-плитка «+194%» — конвейер Метеоры (глянец + кант + гигант кодом)",
+     "prompt": "A thick betting ticket card shaped like a slab, with a small embossed checkmark symbol. Material and lighting: glossy black glass and dark metal, thin neon red #E0201B edge glow, subtle violet #9B82FF reflections, crisp highlights. Isolated single object, large, centered in the lower two thirds, slightly rotated, on a pure flat black background, soft red floor glow under it. Hyper-realistic premium 3D product render. Absolutely no text, no letters, no numbers, no logos.",
+     "model": "Nano Banana Pro (Gemini, режим 3.1 Pro)",
+     "aspect": "3:4",
+     "compose": {
+      "look": "giant",
+      "mode": "behind",
+      "box": [
+       0.04,
+       0.02,
+       0.92,
+       0.22
+      ],
+      "tint": "#FFFFFF"
+     },
+     "frame": "night/final/r4_object.jpg",
+     "why": "предмет отдельно, тонкий неоновый кант, гигант за ним"
+    }
+   ]
+  },
+  {
+   "id": "tz2",
+   "style_id": "core_water",
+   "style": "Вода затапливает цифру",
+   "group": "Среда съедает буквы",
+   "idea": "Пустой зал трейдеров затоплен по пояс, светящиеся мониторы уходят под воду: цена «утонула» до $61 950",
+   "why": "Главная цифра-итог поста — провал до ≈$61 950, ниже $65 тыс. впервые с августа. Стиль core_water как раз для такого: цифра «тонет» по линии воды. Сцена — рабочее место рынка, а не гири, так что с первой идеей не повторяется",
+   "headline": "$61 950",
+   "hero": "ряды трейдерских столов с мониторами, наполовину под водой",
+   "zone": "top",
+   "format": "16:9",
+   "prompt": "Split-level photograph at the waterline in a flooded empty trading floor at night: the upper half above the water shows long rows of trading desks with dark multi-monitor setups and office chairs, lit only by cold blue-grey emergency light from tall windows on the right; the lower half underwater shows a sinking keyboard, scattered paper printouts drifting, a fallen monitor glowing faint deep red as it sinks, cables floating like weeds, murky green-blue water, rising air bubbles. Depth: a blurred floating paper sheet very close to the lens in the foreground at the waterline, the central desk with the sinking glowing monitor sharp in the middle, the far rows of desks fading into dark haze behind. Shot with a 24mm lens in a half-over-half-under dome, camera exactly at the waterline, slightly wide. Mood: quiet disaster, cold, abandoned, palette of murky teal, black and a single dim red glow. The upper third above the water stays calm and dark, Documentary photography, film grain, 16:9 widescreen landscape. no logos, no watermark; every screen shows only soft abstract blurred light. Palette: background #050505, main #F0EEE9, accent #E0201B, glow #E0201B; intense red glow from below, deep shadows, ominous. No text, no letters, no numbers, no logos, no watermark.",
+   "compose": {
+    "mode": "overlay",
+    "look": "water",
+    "box": [
+     0.06,
+     0.12,
+     0.88,
+     0.5
+    ]
+   },
+   "text": {
+    "by": "code",
+    "kind": "water",
+    "how": "Цифра по линии воды, низ букв мутнеет. Маски героя нет.",
+    "compose": {
+     "mode": "overlay",
+     "look": "water",
+     "box": [
+      0.06,
+      0.12,
+      0.88,
+      0.5
+     ]
+    }
+   },
+   "models": [
+    "nano_banana_pro_gemini",
+    "seedream_5_lite_4k",
+    "nano_banana_gemini"
+   ],
+   "examples": [
+    {
+     "label": "Вода «60%» — цифра по линии воды",
+     "prompt": "Split-level photograph at the waterline in a flooded empty exam hall: the upper half above the water shows rows of wooden desks and tall windows in cold daylight, the lower half underwater shows submerged exam booklets drifting and an open laptop sinking with a faint violet glow, murky green-blue water, bubbles. No text, no letters, no numbers, no logos, no watermark.",
+     "model": "Nano Banana Pro (Gemini, режим 3.1 Pro)",
+     "aspect": "4:5",
+     "compose": {
+      "look": "water",
+      "mode": "overlay",
+      "box": [
+       0.05,
+       0.04,
+       0.9,
+       0.22
+      ]
+     },
+     "frame": "night/final/core_water__hfnb.jpg",
+     "why": "критик 8/10, Лео ✅"
+    }
+   ]
+  },
+  {
+   "id": "tz3",
+   "style_id": "ours_board",
+   "style": "Текст в сцене (табло вылетов)",
+   "group": "Наши форматы",
+   "idea": "Табло вылетов рынка показывает статусы пяти гирь: ставка ФРС на посадке, ETF улетели, стейблы задержаны, плечо отменено",
+   "why": "В посте есть готовый список «кто летит, кто нет»: 9 декабря ФРС, доллар, отток из ETF, сжатие стейблов, ликвидации лонгов, пут на $60 тыс. На табло все пять гирь видны сразу, а заголовок «9 ДЕКАБРЯ» повторяет развязку поста: «жду сильнее, чем Новый год»",
+   "headline": "9 ДЕКАБРЯ",
+   "hero": "два трейдера со спины перед огромным табло вылетов",
+   "zone": "none",
+   "format": "16:9",
+   "prompt": "Cinematic photograph over the shoulders of two people seen from behind, a man in a dark coat and a woman with a backpack, standing in a dim near-empty airport terminal at night, looking up at a huge black departures board with bright amber LED rows reading exactly: FED RATE DEC 9 — +25 BP BOARDING; DXY 103.43 — ON TIME; BTC ETF -$1.91B — DEPARTED; STABLECOINS -$11.5B — DELAYED; LONGS $1.92B — CANCELLED; BTC PUT $60 000 — BOARDING. The red light of the CANCELLED and DELAYED statuses falls on their faces and shoulders, a cold fluorescent light from the far ceiling behind the board. Depth: the blurred shoulders and backs of the two people large in the foreground, a soft dark terminal with blurred empty seats and a distant window to the night runway in the background. Shot with a 50mm lens, slightly low angle, shallow depth of field. Mood: anxious waiting, late-night stillness, palette of black, amber LED and alarm red. Film grain, 16:9 widescreen landscape. No logos. Palette: background #050505, main #F0EEE9, accent #E0201B, glow #E0201B; intense red glow from below, deep shadows, ominous. No text, no letters, no numbers, no logos, no watermark.",
+   "compose": {
+    "mode": "overlay",
+    "look": "lit",
+    "led_reprint": true
+   },
+   "text": {
+    "by": "code",
+    "kind": "in_scene",
+    "how": "Латиница на табло — от модели; русский заголовок спереди «lit». НИКОГДА не «за героем».",
+    "compose": {
+     "mode": "overlay",
+     "look": "lit",
+     "led_reprint": true
+    }
+   },
+   "models": [
+    "nano_banana_pro_gemini",
+    "seedream_5_lite_4k",
+    "nano_banana_gemini"
+   ],
+   "examples": [
+    {
+     "label": "Табло вылетов через плечо",
+     "prompt": "Cinematic photograph over the shoulders of two people seen from behind in a dark airport terminal, a huge departures board with bright LED rows: A16Z CRYPTO — CANCELLED; A16Z FRONTIER — BOARDING; SEQUOIA AI — $7B BOARDING; CRYPTO DEALS — -24% DELAYED. Red light from the CANCELLED status falls on their faces and shoulders, film grain, shallow depth of field. No logos.",
+     "model": "Nano Banana Pro (Gemini, режим 3.1 Pro)",
+     "aspect": "16:9",
+     "compose": {
+      "mode": "overlay",
+      "led_reprint": true
+     },
+     "frame": "night/final/ours_board__hfnb.jpg",
+     "why": "Лео «прям топ», критик 8/10; текст живёт в табло — НИКОГДА не «за героем»"
+    }
+   ]
+  }
+ ],
+ "seconds": 35
+}
