@@ -1,0 +1,216 @@
+{
+ "version": "2026-11-16",
+ "how": "Бот шлёт альбом карточек bot/NN_*.jpg (1280×720) → редактор жмёт цифру → ТЗ в стиле: image_brief.approved_briefs(post, n=1, …) с ограничением style_id ∈ style_ids выбранного номера.",
+ "styles": [
+  {
+   "n": 1,
+   "key": "real",
+   "name": "Реализм-сцена",
+   "style_ids": [
+    "pin07",
+    "pin17"
+   ],
+   "when": "Большое событие над рынком или городом; «один выделяется из массы» — тревога или триумф одним цветным пятном",
+   "tile": "visual/styles-gallery/bot/01_real.jpg",
+   "tile_kb": 167,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k",
+   "rating": "strong"
+  },
+  {
+   "n": 2,
+   "key": "hero",
+   "name": "Слово за героем",
+   "style_ids": [
+    "ours_gavin"
+   ],
+   "when": "Новость про человека: основатель, CEO, трейдер — его вердикт одним гигантским словом за спиной",
+   "tile": "visual/styles-gallery/bot/02_hero.jpg",
+   "tile_kb": 111,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k",
+   "rating": "strong"
+  },
+  {
+   "n": 3,
+   "key": "object",
+   "name": "3D-предмет перед цифрой",
+   "style_ids": [
+    "ours_meteora"
+   ],
+   "when": "Цифра или вердикт про актив, продукт, сделку: предмет-символ крупно перед гигантской цифрой",
+   "tile": "visual/styles-gallery/bot/03_object.jpg",
+   "tile_kb": 51,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k",
+   "rating": "mid"
+  },
+  {
+   "n": 4,
+   "key": "env",
+   "name": "Среда съедает буквы",
+   "style_ids": [
+    "core_steam",
+    "core_day_smoke",
+    "core_water",
+    "core_fog",
+    "core_stage_smoke"
+   ],
+   "when": "Главный вопрос или вердикт недели одним словом; тренд остывает, «горит», тонет",
+   "tile": "visual/styles-gallery/bot/04_env.jpg",
+   "tile_kb": 103,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k",
+   "rating": "strong"
+  },
+  {
+   "n": 5,
+   "key": "board",
+   "name": "Текст в сцене (табло)",
+   "style_ids": [
+    "ours_board"
+   ],
+   "when": "Прогнозы, отменённые и отложенные события, списки «кто летит, кто нет»",
+   "tile": "visual/styles-gallery/bot/05_board.jpg",
+   "tile_kb": 99,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k",
+   "rating": "strong"
+  },
+  {
+   "n": 6,
+   "key": "evidence",
+   "name": "Текст + 3D-элемент (улика)",
+   "style_ids": [
+    "ours_ledger"
+   ],
+   "when": "Расследования, взломы, суды, «деньги в пакете» — объёмная улика рядом с гигантским текстом",
+   "tile": "visual/styles-gallery/bot/06_evidence.jpg",
+   "tile_kb": 72,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k",
+   "rating": "mid"
+  },
+  {
+   "n": 7,
+   "key": "flash",
+   "name": "Флэш-новость",
+   "style_ids": [
+    "ours_flash"
+   ],
+   "when": "Сильная новость «кто × кто + цифра» — быстро, раз в неделю: лицо-эмоция, два логотипа, «НОВОСТИ»",
+   "tile": "visual/styles-gallery/bot/07_flash.jpg",
+   "tile_kb": 71,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k",
+   "rating": "strong"
+  },
+  {
+   "n": 8,
+   "key": "cards_digit",
+   "name": "Карточки с цифрой (наша серия)",
+   "style_ids": [
+    "ours_cards"
+   ],
+   "kind": "cards_series",
+   "when": "Карусель-разбор с цифрами: хук → факты по одному → вывод; одна цифра на карточку за предметом",
+   "examples": [
+    "/Users/leo/brain/cryptus-editor-bot/visual/night/final/ours_cards__gem_01.jpg",
+    "/Users/leo/brain/cryptus-editor-bot/visual/night/final/ours_cards__gem_02.jpg",
+    "/Users/leo/brain/cryptus-editor-bot/visual/night/final/ours_cards__gem_05.jpg"
+   ],
+   "tile": "visual/styles-gallery/bot/08_cards_digit.jpg",
+   "tile_kb": 76,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k (+ текст кодом)",
+   "rating": "mid"
+  },
+  {
+   "n": 9,
+   "key": "cards_tc_polkadot",
+   "name": "Тру-крайм: Гэвин Вуд / Polkadot",
+   "style_ids": [
+    "ours_cards"
+   ],
+   "kind": "cards_series",
+   "when": "История человека или взлома по шагам: кинокадр + гигантский заголовок в среднем слое + плашка-подпись",
+   "examples": [
+    "/Users/leo/brain/cryptus-editor-bot/visual/refs/polkadot/cards/fixed/p1_c1_a.png",
+    "/Users/leo/brain/cryptus-editor-bot/visual/refs/polkadot/cards/fixed/p1_c3_a.png",
+    "/Users/leo/brain/cryptus-editor-bot/visual/refs/polkadot/cards/fixed/p1_c5_a.png"
+   ],
+   "tile": "visual/styles-gallery/bot/09_cards_tc_polkadot.jpg",
+   "tile_kb": 100,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k (+ текст кодом)",
+   "rating": "strong"
+  },
+  {
+   "n": 10,
+   "key": "cards_tc_cz",
+   "name": "Тру-крайм: CZ",
+   "style_ids": [
+    "ours_cards"
+   ],
+   "kind": "cards_series",
+   "when": "Расследование/дело: суды, аресты, «как это было» — документальный реализм серией",
+   "examples": [
+    "/Users/leo/brain/cryptus-editor-bot/visual/refs/cloud/cz/s8_01_a.png",
+    "/Users/leo/brain/cryptus-editor-bot/visual/refs/cloud/cz/s8_02_a.png",
+    "/Users/leo/brain/cryptus-editor-bot/visual/refs/cloud/cz/tc_t1_a.png"
+   ],
+   "tile": "visual/styles-gallery/bot/10_cards_tc_cz.jpg",
+   "tile_kb": 113,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k (+ текст кодом)",
+   "rating": "strong"
+  },
+  {
+   "n": 11,
+   "key": "cards_carousel",
+   "name": "Карусель-разбор CRYPTUS (неон + плашка-маркер)",
+   "style_ids": [
+    "ours_cards"
+   ],
+   "kind": "cards_series",
+   "when": "Объясняющие серии: законы, налоги, персонажи — узкий капс, слово на цветной плашке, иллюстрация снизу",
+   "examples": [
+    "/Users/leo/brain/cryptus-content-factory/cards_v3/CRYPTUS_1.jpg",
+    "/Users/leo/brain/cryptus-content-factory/cards_v3/CRYPTUS_2.jpg",
+    "/Users/leo/brain/cryptus-content-factory/cards_v3/CRYPTUS_3.jpg"
+   ],
+   "tile": "visual/styles-gallery/bot/11_cards_carousel.jpg",
+   "tile_kb": 106,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k (+ текст кодом)",
+   "rating": "mid"
+  },
+  {
+   "n": 12,
+   "key": "cards_cifra_week",
+   "name": "«Цифра недели» (типографика)",
+   "style_ids": [
+    "ours_cards"
+   ],
+   "kind": "cards_series",
+   "when": "Одна цифра-факт недели или портфель — быстро, без генерации картинки",
+   "examples": [
+    "/Users/leo/brain/cryptus-content-factory/rubric_mvp/cifra_1.png",
+    "/Users/leo/brain/cryptus-content-factory/rubric_mvp/cifra_2.png",
+    "/Users/leo/brain/cryptus-content-factory/rubric_mvp/portfel_1.png"
+   ],
+   "tile": "visual/styles-gallery/bot/12_cards_cifra_week.jpg",
+   "tile_kb": 69,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k (+ текст кодом)",
+   "rating": "mid"
+  },
+  {
+   "n": 13,
+   "key": "cards_cifra_guide",
+   "name": "Гайд Cifra Markets (партнёр)",
+   "style_ids": [
+    "ours_cards"
+   ],
+   "kind": "cards_series",
+   "when": "Партнёрский гайд по шагам: обложка поп-арт + шаги со скриншотами («Цифра за 5 минут»)",
+   "examples": [
+    "/Users/leo/brain/cryptus-content-factory/guides/cifra/cards_popart/00-cover.png",
+    "/Users/leo/brain/cryptus-content-factory/guides/cifra/cards/01-otkryt-schet.png",
+    "/Users/leo/brain/cryptus-content-factory/guides/cifra/cards/05-pismo-verifikacii.png"
+   ],
+   "tile": "visual/styles-gallery/bot/13_cards_cifra_guide.jpg",
+   "tile_kb": 82,
+   "model": "nano_banana_pro_gemini → seedream_5_lite_4k (+ текст кодом)",
+   "rating": "mid"
+  }
+ ]
+}
