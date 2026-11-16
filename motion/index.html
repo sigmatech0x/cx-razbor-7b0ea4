@@ -1,0 +1,33 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><title>CRYPTUS — оживление картинок</title><style>
+body{margin:0;background:#0A0B0D;color:#ECECF1;font:16px/1.5 -apple-system,system-ui,sans-serif}main{max-width:1100px;margin:0 auto;padding:18px 14px 60px}
+h1{font:800 28px/1.1 -apple-system,sans-serif;text-transform:uppercase}h1 em{color:#9B82FF;font-style:normal}h3{margin:0 0 10px}
+.card{background:#111318;border:1px solid #1B1D23;border-radius:16px;padding:14px;margin:0 0 16px}.row{display:grid;grid-template-columns:1fr;gap:10px}
+figure{margin:0}img,video{width:100%;border-radius:12px;display:block;background:#000}figcaption{font-size:13px;color:#8A8D98;margin-top:4px}
+.wait div{aspect-ratio:4/5;border:1px dashed #3a3d46;border-radius:12px;display:grid;place-items:center;color:#8A8D98;font-size:18px}
+table{width:100%;border-collapse:collapse;font-size:14.5px}td,th{border-bottom:1px solid #1B1D23;padding:8px 6px;text-align:left;vertical-align:top}th{color:#9B82FF}
+.bot{background:#9B82FF1a;border:1px solid #9B82FF66;border-radius:14px;padding:12px 14px}
+@media(min-width:760px){.row{grid-template-columns:repeat(3,1fr)}}</style></head><body><main>
+<h1>Оживление <em>картинок</em></h1><p>Роадмап, п.3. Текст никогда не анимирует модель: он стоит отдельным слоем кодом поверх видео. Без Higgsfield, бот не останавливался.</p>
+<div class="card"><h3>Красный вырез неба (ТОП)</h3><div class="row"><figure><img src="img/sky_src.jpg" loading="lazy"><figcaption>исходный кадр</figcaption></figure>
+<figure><video src="out/sky.mp4" poster="img/sky_poster.jpg" autoplay muted loop playsinline></video><figcaption>🆓 параллакс кодом · 6 с · рендер 8,5 с</figcaption></figure>
+<figure class="wait"><div>⏳ Gemini Veo</div><figcaption>ждём у строителя: загрузка картинки + режим «Видео» в очереди бота</figcaption></figure></div>
+<p>Наезд снизу вверх между башнями, ближние этажи едут быстрее — объём; свет неба мерцает.</p></div><div class="card"><h3>Один из серой толпы (ТОП)</h3><div class="row"><figure><img src="img/crowd_src.jpg" loading="lazy"><figcaption>исходный кадр</figcaption></figure>
+<figure><video src="out/crowd.mp4" poster="img/crowd_poster.jpg" autoplay muted loop playsinline></video><figcaption>🆓 параллакс кодом · 6 с · рендер 8,9 с</figcaption></figure>
+<figure class="wait"><div>⏳ Gemini Veo</div><figcaption>ждём у строителя: загрузка картинки + режим «Видео» в очереди бота</figcaption></figure></div>
+<p>Мягкий наезд с лёгким сдвигом: робот и ближние люди двигаются сильнее дальнего города.</p></div><div class="card"><h3>Дым «КРИПТА?» (буквы нарисовала модель)</h3><div class="row"><figure><img src="img/smoke_src.jpg" loading="lazy"><figcaption>исходный кадр</figcaption></figure>
+<figure><video src="out/smoke.mp4" poster="img/smoke_poster.jpg" autoplay muted loop playsinline></video><figcaption>🆓 параллакс кодом · 6 с · рендер 4,9 с</figcaption></figure>
+<figure class="wait"><div>⏳ Gemini Veo</div><figcaption>ждём у строителя: загрузка картинки + режим «Видео» в очереди бота</figcaption></figure></div>
+<p>Ровный наезд без параллакса: иначе буквы модели гнутся. Живой дым кодом не вышел (тянет небо) — это задача для Gemini Veo.</p></div><div class="card"><h3>3D-плитка «+194%» (конвейер Метеоры)</h3><div class="row"><figure><img src="img/slab_src.jpg" loading="lazy"><figcaption>исходный кадр</figcaption></figure>
+<figure><video src="out/slab.mp4" poster="img/slab_poster.jpg" autoplay muted loop playsinline></video><figcaption>🆓 параллакс кодом · 6 с · рендер 12 с</figcaption></figure>
+<figure class="wait"><div>⏳ Gemini Veo</div><figcaption>ждём у строителя: загрузка картинки + режим «Видео» в очереди бота</figcaption></figure></div>
+<p>Плитка едет вместе с фоном и перекрывает цифры; текст — отдельным слоем кодом, не искажается; неон мерцает.</p></div>
+<div class="card"><h3>Сравнение путей</h3><table><tr><th></th><th>🆓 Gemini Veo (подписка)</th><th>🆓 Параллакс кодом (локально)</th></tr>
+<tr><td>Что умеет</td><td>Настоящее движение: дым, люди, свет, физика</td><td>Только камера (наезд/сдвиг с объёмом по карте глубины) + мерцание света</td></tr>
+<tr><td>Время</td><td>ориентир 1–3 мин на ролик (проверим)</td><td>5–13 с на ролик 6 с</td></tr>
+<tr><td>Лимиты</td><td>дневной лимит видео по подписке; очередь бота, человеческий темп</td><td>нет</td></tr>
+<tr><td>Риски</td><td>ломает текст и лица → подаём кадр БЕЗ текста, текст кладём после</td><td>гнёт буквы, нарисованные моделью; дым живым не сделать</td></tr>
+<tr><td>Статус</td><td>⏳ нужны 2 операции в очереди бота (запрошено у строителя)</td><td>✅ готово, 4 ролика выше</td></tr></table></div>
+<div class="bot"><b>Как это будет в боте:</b> под готовой картинкой кнопка <b>«🎞 Оживить»</b> → бот берёт чистый кадр без текста → Gemini Veo (5–8 с: медленный наезд, дым/пар движется, свет мерцает) →
+если Gemini занят/лимит — бесплатный параллакс кодом (≈10 с) → поверх накладывается слой текста кодом → mp4 в чат (вертикаль 4:5, для ТГ ≤ 20 МБ).</div>
+</main></body></html>
