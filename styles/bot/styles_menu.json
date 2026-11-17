@@ -108,9 +108,9 @@
    "kind": "cards_series",
    "when": "Карусель-разбор с цифрами: хук → факты по одному → вывод; одна цифра на карточку за предметом",
    "examples": [
-    "/Users/leo/brain/cryptus-editor-bot/visual/night/final/ours_cards__gem_01.jpg",
-    "/Users/leo/brain/cryptus-editor-bot/visual/night/final/ours_cards__gem_02.jpg",
-    "/Users/leo/brain/cryptus-editor-bot/visual/night/final/ours_cards__gem_05.jpg"
+    "ours_cards__gem_01.jpg",
+    "ours_cards__gem_02.jpg",
+    "ours_cards__gem_05.jpg"
    ],
    "tile": "visual/styles-gallery/bot/08_cards_digit.jpg",
    "tile_kb": 76,
@@ -127,9 +127,9 @@
    "kind": "cards_series",
    "when": "История человека или взлома по шагам: кинокадр + гигантский заголовок в среднем слое + плашка-подпись",
    "examples": [
-    "/Users/leo/brain/cryptus-editor-bot/visual/refs/polkadot/cards/fixed/p1_c1_a.png",
-    "/Users/leo/brain/cryptus-editor-bot/visual/refs/polkadot/cards/fixed/p1_c3_a.png",
-    "/Users/leo/brain/cryptus-editor-bot/visual/refs/polkadot/cards/fixed/p1_c5_a.png"
+    "p1_c1_a.png",
+    "p1_c3_a.png",
+    "p1_c5_a.png"
    ],
    "tile": "visual/styles-gallery/bot/09_cards_tc_polkadot.jpg",
    "tile_kb": 100,
@@ -146,9 +146,9 @@
    "kind": "cards_series",
    "when": "Расследование/дело: суды, аресты, «как это было» — документальный реализм серией",
    "examples": [
-    "/Users/leo/brain/cryptus-editor-bot/visual/refs/cloud/cz/s8_01_a.png",
-    "/Users/leo/brain/cryptus-editor-bot/visual/refs/cloud/cz/s8_02_a.png",
-    "/Users/leo/brain/cryptus-editor-bot/visual/refs/cloud/cz/tc_t1_a.png"
+    "s8_01_a.png",
+    "s8_02_a.png",
+    "tc_t1_a.png"
    ],
    "tile": "visual/styles-gallery/bot/10_cards_tc_cz.jpg",
    "tile_kb": 113,
@@ -165,9 +165,9 @@
    "kind": "cards_series",
    "when": "Объясняющие серии: законы, налоги, персонажи — узкий капс, слово на цветной плашке, иллюстрация снизу",
    "examples": [
-    "/Users/leo/brain/cryptus-content-factory/cards_v3/CRYPTUS_1.jpg",
-    "/Users/leo/brain/cryptus-content-factory/cards_v3/CRYPTUS_2.jpg",
-    "/Users/leo/brain/cryptus-content-factory/cards_v3/CRYPTUS_3.jpg"
+    "CRYPTUS_1.jpg",
+    "CRYPTUS_2.jpg",
+    "CRYPTUS_3.jpg"
    ],
    "tile": "visual/styles-gallery/bot/11_cards_carousel.jpg",
    "tile_kb": 106,
@@ -184,9 +184,9 @@
    "kind": "cards_series",
    "when": "Одна цифра-факт недели или портфель — быстро, без генерации картинки",
    "examples": [
-    "/Users/leo/brain/cryptus-content-factory/rubric_mvp/cifra_1.png",
-    "/Users/leo/brain/cryptus-content-factory/rubric_mvp/cifra_2.png",
-    "/Users/leo/brain/cryptus-content-factory/rubric_mvp/portfel_1.png"
+    "cifra_1.png",
+    "cifra_2.png",
+    "portfel_1.png"
    ],
    "tile": "visual/styles-gallery/bot/12_cards_cifra_week.jpg",
    "tile_kb": 69,
@@ -203,9 +203,9 @@
    "kind": "cards_series",
    "when": "Партнёрский гайд по шагам: обложка поп-арт + шаги со скриншотами («Цифра за 5 минут»)",
    "examples": [
-    "/Users/leo/brain/cryptus-content-factory/guides/cifra/cards_popart/00-cover.png",
-    "/Users/leo/brain/cryptus-content-factory/guides/cifra/cards/01-otkryt-schet.png",
-    "/Users/leo/brain/cryptus-content-factory/guides/cifra/cards/05-pismo-verifikacii.png"
+    "00-cover.png",
+    "01-otkryt-schet.png",
+    "05-pismo-verifikacii.png"
    ],
    "tile": "visual/styles-gallery/bot/13_cards_cifra_guide.jpg",
    "tile_kb": 82,
