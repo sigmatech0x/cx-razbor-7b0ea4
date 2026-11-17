@@ -1,0 +1,3 @@
+:HL["/cx-razbor-7b0ea4/redakcia-demo/_next/static/chunks/0ghr-5y8i4mb_.css","style"]
+:HC["/",""]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"plan","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"bGuCZmqqucqxqxbMHul8v"}
