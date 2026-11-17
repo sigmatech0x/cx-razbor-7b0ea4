@@ -1,2 +1,0 @@
-:HL["/cx-razbor-7b0ea4/redakcia-demo/_next/static/chunks/2j-j6a1im1eqx.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"KN5vC1ml2cEG__o1KbLpp"}
