@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Редакция CRYPTUS — роадмап</title>
+<style>
+  :root{
+    --bg:#0b0b10; --card:#14141c; --card2:#191924; --line:#262634;
+    --text:#ececf3; --mute:#9a9ab0; --dim:#6c6c82;
+    --violet:#8b5cf6; --violet2:#a78bfa; --green:#34d399; --amber:#fbbf24; --blue:#60a5fa; --red:#f87171;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--text);font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,sans-serif;padding:0 0 64px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 18px}
+  header{padding:36px 0 20px}
+  .kicker{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--violet2);font-weight:600}
+  h1{font-size:34px;line-height:1.15;margin:8px 0 6px;font-weight:800;letter-spacing:-.02em}
+  .sub{color:var(--mute);font-size:15px}
+  /* где мы сейчас */
+  .now{margin:22px 0 8px;padding:20px 20px 18px;border-radius:20px;background:linear-gradient(135deg,#2a1b4d 0%,#16121f 70%);border:1px solid #3b2a66}
+  .now .lbl{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--violet2);font-weight:700}
+  .now .big{font-size:21px;font-weight:700;margin-top:6px;line-height:1.3}
+  /* шкала стадий */
+  .track{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0 0}
+  .st{position:relative;padding:12px 10px 10px;border-radius:14px;background:var(--card);border:1px solid var(--line);min-height:92px}
+  .st .n{font-size:12px;color:var(--dim);font-weight:700}
+  .st .t{font-size:14px;font-weight:650;margin-top:4px;line-height:1.25}
+  .st .bar{position:absolute;left:10px;right:10px;bottom:10px;height:4px;border-radius:4px;background:var(--line);overflow:hidden}
+  .st .bar i{display:block;height:100%;background:var(--violet)}
+  .st.cur{border-color:var(--violet);background:#1b1530}
+  .st.cur .n{color:var(--violet2)}
+  /* секции */
+  section{margin-top:34px}
+  h2{font-size:22px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+  h2 .cnt{font-size:13px;color:var(--mute);font-weight:600;background:var(--card2);border:1px solid var(--line);padding:2px 9px;border-radius:999px}
+  .hint{color:var(--mute);font-size:14px;margin-top:4px}
+  ul.done{list-style:none;margin-top:14px;display:grid;gap:8px}
+  ul.done li{display:grid;grid-template-columns:64px 1fr;gap:10px;align-items:baseline;padding:11px 14px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+  ul.done .d{font-variant-numeric:tabular-nums;color:var(--green);font-weight:700;font-size:14px}
+  ul.done .w{font-size:15px}
+  ul.done .w small{display:block;color:var(--mute);font-size:13px;margin-top:2px}
+  .group{margin-top:18px;font-size:13px;font-weight:700;color:var(--dim);letter-spacing:.08em;text-transform:uppercase}
+  .star{margin-top:14px;display:grid;gap:10px}
+  .star .c{padding:16px;border-radius:16px;background:linear-gradient(135deg,#1d2a1f,#14141c 75%);border:1px solid #2c4a35}
+  .star .c b{font-size:16px}
+  .star .c q{display:block;color:#bfe9cf;font-style:italic;margin-top:6px;font-size:15px}
+  .star .c q::before{content:"«"} .star .c q::after{content:"»"}
+  .star .c .who{color:var(--mute);font-size:13px;margin-top:4px}
+  .honest{margin-top:10px;padding:12px 14px;border-radius:14px;border:1px dashed #4a4a5e;color:var(--mute);font-size:14px}
+  .work{margin-top:14px;display:grid;gap:8px}
+  .work .r{display:flex;gap:12px;padding:13px 14px;background:#1a1626;border:1px solid #33285a;border-radius:14px}
+  .work .r .e{font-size:18px;line-height:1.3}
+  .work .r .x{font-size:15px}
+  .work .r .x small{display:block;color:var(--mute);font-size:13px;margin-top:2px}
+  .step{margin-top:14px;padding:18px;border-radius:18px;background:var(--card);border:1px solid var(--line)}
+  .step .top{display:flex;align-items:center;gap:12px}
+  .step .num{flex:0 0 38px;height:38px;border-radius:12px;background:#1f1a33;color:var(--violet2);display:grid;place-items:center;font-weight:800;font-size:18px;border:1px solid #3b2a66}
+  .step h3{font-size:18px;font-weight:750;line-height:1.25}
+  .step .when{margin-left:auto;font-size:13px;color:var(--amber);font-weight:700;white-space:nowrap}
+  .kv{margin-top:12px;display:grid;gap:8px}
+  .kv div{display:grid;grid-template-columns:118px 1fr;gap:10px;font-size:15px}
+  .kv dt{color:var(--dim);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+  .kv dd a{color:var(--violet2)}
+  .need{margin-top:12px;padding:10px 12px;border-radius:12px;background:#2a2312;border:1px solid #5b4a1c;color:#f5dc9a;font-size:14px}
+  .need b{color:#ffe7a8}
+  footer{margin-top:40px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+  @media (max-width:560px){
+    h1{font-size:28px}
+    .track{grid-template-columns:repeat(2,1fr)}
+    ul.done li{grid-template-columns:52px 1fr;padding:10px 12px}
+    .kv div{grid-template-columns:1fr;gap:2px}
+    .step .top{flex-wrap:wrap}
+    .step .when{margin-left:50px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Редакция CRYPTUS · роадмап</div>
+  <h1>Что построили и куда идём</h1>
+  <div class="sub">Сайт редакции и бот для Андрея. Обновлено 20.11.2026, утро.</div>
+
+  <div class="now">
+    <div class="lbl">Где мы сейчас</div>
+    <div class="big">Стадия 1 из 4 — финальные штрихи. Сайт и бот работают, доводим голос, картинки и надёжность.</div>
+  </div>
+
+  <div class="track">
+    <div class="st cur"><div class="n">1 · СЕЙЧАС</div><div class="t">Финальные штрихи</div><div class="bar"><i style="width:80%"></i></div></div>
+    <div class="st"><div class="n">2</div><div class="t">Радар: X и Reddit</div><div class="bar"><i style="width:10%"></i></div></div>
+    <div class="st"><div class="n">3</div><div class="t">Лонгрид с карточками</div><div class="bar"><i style="width:10%"></i></div></div>
+    <div class="st"><div class="n">4</div><div class="t">Видео и кругляшки</div><div class="bar"><i style="width:15%"></i></div></div>
+  </div>
+</header>
+
+<!-- СДЕЛАНО -->
+<section>
+  <h2>✅ Сделано и работает <span class="cnt">18</span></h2>
+  <div class="hint">Всё это можно открыть и нажать сегодня.</div>
+
+  <div class="group">Бот для Андрея</div>
+  <ul class="done">
+    <li><span class="d">14.11</span><span class="w">Бот-редактор: от темы до готового поста за 6 минут<small>@design_brat_bot, режим «Редактор»</small></span></li>
+    <li><span class="d">14.11</span><span class="w">Голос CRYPTUS собран по 404 постам канала<small>вслепую не отличили от наших в 8–9 случаях из 10</small></span></li>
+    <li><span class="d">16.11</span><span class="w">Андрей работает в боте; досье темы — одна статья со ссылками</span></li>
+    <li><span class="d">16.11</span><span class="w">Сторож проверяет бота каждый час и шлёт тревогу Лео</span></li>
+  </ul>
+
+  <div class="group">Сайт редакции</div>
+  <ul class="done">
+    <li><span class="d">17.11</span><span class="w">Сайт открыт: вход одной кнопкой из бота<small>redakcia-cryptus.vercel.app — только Лео и Андрей</small></span></li>
+    <li><span class="d">17.11</span><span class="w">Контент-план: неделя, месяц, доска — со слотами рекламы партнёров</span></li>
+    <li><span class="d">17.11</span><span class="w">Радар: 8 свежих тем по кнопке; «Копать» — досье за 10 минут</span></li>
+    <li><span class="d">17.11</span><span class="w">Пост: три варианта, правки кнопками, «Готово» — пост приходит в Telegram</span></li>
+    <li><span class="d">17.11</span><span class="w">Картинки: ИИ пишет задание, правки словами, версии с откатом<small>три пути: пост · пост с картинкой · только картинка</small></span></li>
+  </ul>
+
+  <div class="group">Партнёры и деньги</div>
+  <ul class="done">
+    <li><span class="d">18.11</span><span class="w">«Реклама»: обязательства и план по каждому партнёру<small>Konnex, Bullshot, ZOT, CoinW, Cifra, Backtrade</small></span></li>
+    <li><span class="d">18.11</span><span class="w">Отчёт партнёру Cifra в PDF: охват 139 005, план просмотров выполнен на 136%</span></li>
+  </ul>
+
+  <div class="group">Ресёрч и картинки</div>
+  <ul class="done">
+    <li><span class="d">18.11</span><span class="w">Ресёрч опирается на 16 крупных источников, а не на мелкие сайты<small>по жалобе Андрея</small></span></li>
+    <li><span class="d">19.11</span><span class="w">Каталог стилей картинок: 24 формата на выбор</span></li>
+    <li><span class="d">20.11</span><span class="w">Ресёрч через твой Perplexity Pro, в папке «Света Кулинария»</span></li>
+    <li><span class="d">20.11</span><span class="w">Меню моделей: Nano Banana 2.1 и 2 бесплатно, Seedream 5.5 — 40 кредитов</span></li>
+    <li><span class="d">20.11</span><span class="w">Оборвалась бесплатная картинка — бот сам перерисует её один раз</span></li>
+    <li><span class="d">20.11</span><span class="w">Фирменные фиолетовые маркеры в готовом посте, как в канале</span></li>
+  </ul>
+
+  <div class="group">Сохранность</div>
+  <ul class="done">
+    <li><span class="d">20.11</span><span class="w">Копия всей базы сайта на мини: партнёры, план, материалы<small>проверили: из копии всё восстанавливается, строка в строку</small></span></li>
+  </ul>
+</section>
+
+<!-- КРУТО -->
+<section>
+  <h2>⭐ Работает круто</h2>
+  <div class="hint">Только то, что ты сам так назвал.</div>
+  <div class="star">
+    <div class="c"><b>Генерация картинок</b><q>в принципе, генерирует круто</q><div class="who">Лео, 20.11, 04:23</div></div>
+    <div class="c"><b>Карточки-реализм, как в посте «Санта-ралли»</b><q>в формате реализма… получается круто</q><div class="who">Лео, 20.11, 04:23 — после того как убрали лишний текст с карточек</div></div>
+  </div>
+  <div class="honest">«Идеально» пока не ставим ничему. Голос и надёжность ещё доводим — это стадия 1.</div>
+</section>
+
+<!-- СЕЙЧАС -->
+<section>
+  <h2>🔨 Сейчас · стадия 1 — финальные штрихи</h2>
+  <div class="hint">Твоими словами: «финальные штрихи — и будет вообще топ». Андрей пользуется и даёт комментарии.</div>
+  <div class="work">
+    <div class="r"><span class="e">🗣</span><span class="x">Один голос CRYPTUS — «альфа»<small>любопытный, меньше сложных слов, объясняет человеку. Стоит по умолчанию, других нет</small></span></div>
+    <div class="r"><span class="e">🎨</span><span class="x">Новая библиотека картинок<small>старые стили убираем; жмёшь стиль или «пусть ИИ выберет», пишешь задание — генеришь</small></span></div>
+    <div class="r"><span class="e">🃏</span><span class="x">Карточки без лишнего текста, реализм как в «Санта-ралли»<small>карусель ровно 6 карточек с круглым логотипом — собрано, выкатываем в бота</small></span></div>
+    <div class="r"><span class="e">🛡</span><span class="x">Надёжность: ничего не отваливается<small>правки картинок — через Magnific, сам повторит до 3 раз; кнопка «Повторить» на сайте</small></span></div>
+    <div class="r"><span class="e">👀</span><span class="x">Пост «Санта-ралли» с 6 карточками — тебе и Андрею<small>после утренней проверки всего пути Андрея</small></span></div>
+  </div>
+</section>
+
+<!-- ДАЛЬШЕ -->
+<section>
+  <h2>⏭ Дальше — по шагам</h2>
+  <div class="hint">Идём по одному: следующий шаг начинаем, когда предыдущий работает.</div>
+
+  <div class="step">
+    <div class="top"><div class="num">2</div><h3>Радар: Reddit и X — «что сейчас интересно рынку»</h3><div class="when">~2 дня</div></div>
+    <dl class="kv">
+      <div><dt>Получишь</dt><dd>Кнопка в радаре: свежие темы из Reddit и X. Reddit — первоисточник, «люди для людей»: разоблачения, разборы, инсайды, мнения, страхи, риски.</dd></div>
+      <div><dt>Зависит от</dt><dd>Рабочего доступа к X и Reddit. Сейчас сервис чтения X без денег (20.11 ответил «оплатите»), ключ сервиса сбора с Reddit и X не работает с 14.11.</dd></div>
+      <div><dt>Срок</dt><dd>~2 дня после того, как появится доступ. Reddit пробуем бесплатно напрямую — можно начать раньше.</dd></div>
+    </dl>
+    <div class="need"><b>От тебя:</b> выбрать, через что читаем X. Принесём 2–3 варианта с ценой в месяц — платим только по твоему слову.</div>
+  </div>
+
+  <div class="step">
+    <div class="top"><div class="num">3</div><h3>Лонгрид со вставками карточек</h3><div class="when">~2 дня</div></div>
+    <dl class="kv">
+      <div><dt>Получишь</dt><dd>Длинный пост, где карточки CRYPTUS стоят прямо в тексте: абзац → карточка → абзац. Не отдельная карусель.</dd></div>
+      <div><dt>Зависит от</dt><dd>Прорабатываем вместе с тобой: показываем один пример, ты говоришь «да» на формат.</dd></div>
+      <div><dt>Срок</dt><dd>Разбор с тобой — 20 минут; дальше ~2 дня на бот и сайт.</dd></div>
+    </dl>
+    <div class="need"><b>От тебя:</b> 20 минут — посмотреть пример и сказать, так или нет.</div>
+  </div>
+
+  <div class="step">
+    <div class="top"><div class="num">4</div><h3>Видео: ролики из картинок, кругляшки, новые рубрики</h3><div class="when">~неделя</div></div>
+    <dl class="kv">
+      <div><dt>Получишь</dt><dd>Ролики, собранные из наших картинок и кода (как у канала Макса @maxshitpostit), видеосообщения-кругляшки и новые рубрики под это: рубрики, карточки, кругляшки, видосики.</dd></div>
+      <div><dt>Уже готово</dt><dd>Разбор канала Макса и план первого 30-секундного ролика: <a href="https://sigmatech0x.github.io/cx-razbor-7b0ea4/gta-huang/" target="_blank" rel="noopener">страница разбора</a>.</dd></div>
+      <div><dt>Зависит от</dt><dd>Цены ролика. €19 ты назвал дорогим — есть дешёвые пути: €0 (картинки и видео бесплатно, ~3 ролика в день), ≈€4 (3 сцены с движением, остальное кодом), ≈€7 (всё дешёвой моделью).</dd></div>
+      <div><dt>Срок</dt><dd>~неделя на первый ролик и первую рубрику.</dd></div>
+    </dl>
+    <div class="need"><b>От тебя:</b> выбрать путь €0 / ≈€4 / ≈€7 и поправить раскадровку голосом. Генерируем только после этого.</div>
+  </div>
+</section>
+
+<footer>
+  Порядок шагов — твой, из голосового 20.11 в 04:23. Сроки — примерные, считаем от дня, когда закрыта зависимость.<br>
+  Подробная картотека проекта лежит на Mac mini и в Обсидиане: «Редакция CRYPTUS — Картотека».
+</footer>
+
+</div>
+</body>
+</html>
